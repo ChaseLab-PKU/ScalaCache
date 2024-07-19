@@ -10,11 +10,11 @@ Open-source code repo for ScalaCache, USENIX ATC'24.
 
 ```bash
 git clone git@github.com:ChaseLab-PKU/ScalaCache.git
-# clone SPDK
 cd ScalaCache
+# configure SPDK
 cd SPDK
 git submodule update --init --recursive
-cd -
+cd ..
 ```
 
 ### Installation
@@ -34,8 +34,9 @@ sudo ./pkgdep.sh
 
 cd ..
 
-# please copy SPDK to the FEMU virtual machine
+# please copy SPDK to the FEMU VM
 
+# run FEMU VM
 # build SPDK (assuming in FEMU VM)
 cd SPDK
 # prerequisites
